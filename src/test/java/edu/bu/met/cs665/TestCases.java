@@ -1,18 +1,23 @@
+/**
+ * Name: Shiddharth Saran M
+ * Course: CS-665 Software Design & Patterns
+ * Date: 03/01/2024
+ * File Name: TestCases.java
+ * Description: TestCases class contains JUnit test cases for testing the functionality of the Customer class and its associated segments.
+ */
 package edu.bu.met.cs665;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-/**
- * Write some Unit tests for your program like the examples below.
- */
-
 public class TestCases {
 
     public TestCases() {
     }
-
+    /**
+     * Test case to check the behavior of BusinessSegment.
+     */
     @Test
     public void testBusinessSegment() {
 
@@ -20,7 +25,9 @@ public class TestCases {
         assertEquals("Hello John, Thanks for being a important Business Segment Customer.", customerOne.getEmailTemplate());
 
     }
-
+    /**
+     * Test case to check the behavior of segment swapping.
+     */
     @Test
     public void testSegmentSwap() {
         Customer customerOne = new Customer("John", new BussinessSegment());
@@ -29,7 +36,9 @@ public class TestCases {
         assertEquals("Hello John, Thanks for being a important VIP Segment Customer.", customerOne.getEmailTemplate());
 
     }
-
+    /**
+     * Test case to check the behavior of updating customer names.
+     */
     @Test
     public void testCustomerName(){
         Customer customerOne = new Customer("John", new BussinessSegment());
