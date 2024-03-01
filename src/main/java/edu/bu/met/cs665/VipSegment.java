@@ -8,6 +8,6 @@ public class VipSegment implements CustomerSegmentInterface{
 
     @Override
     public String getConsumerSegmentType() {
-        return "vip";
+        return "VIP";
     }
 }
