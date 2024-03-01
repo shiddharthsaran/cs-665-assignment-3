@@ -1,9 +1,9 @@
 package edu.bu.met.cs665;
 
-public class BussinessSegment implements ConsumerSegmentInterface{
+public class BussinessSegment implements CustomerSegmentInterface{
     @Override
-    public String emailTemplate() {
-        return "BusinessEmail";
+    public String getEmailTemplate() {
+        return "Hello <customerName>, Thanks for being a important Business Segment Customer.";
     }
 
     @Override

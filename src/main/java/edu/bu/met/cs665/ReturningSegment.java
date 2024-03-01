@@ -1,10 +1,10 @@
 package edu.bu.met.cs665;
 
-public class ReturningSegment implements ConsumerSegmentInterface{
+public class ReturningSegment implements CustomerSegmentInterface{
 
     @Override
-    public String emailTemplate() {
-        return "Returning email";
+    public String getEmailTemplate() {
+        return "Hello <customerName>, Thanks for being a important Returning Segment Customer.";
     }
 
     @Override
