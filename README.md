@@ -1,16 +1,21 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Shiddharth Saran M         |
+| Date         | 03/01/2024                 |
+| Course       | Spring                     |
+| Assignment # | 3                          |
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
-
+A company serves various customer segments, including Business, Returning, Frequent, New,
+and VIP. The management requires an efficient solution to send personalized emails to their
+customers. To achieve this, they require a custom application that can automatically generate
+emails based on a base template, tailored to each type of customer.
+Your task is to develop the "Email Generation" application to fulfill this requirement by
+generating automated emails for different customer segments.
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/shiddharthsaran/cs-665-assignment-3
 
 # Implementation Description 
 
@@ -19,11 +24,15 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+  - Implementation is flexible by using interfaces for creating Customer Segments. The Customer can be easily swapped for each customer.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+  - For simplicity and understanding I have added comments and doc blocks for all classes and used descriptive names to aid in understanding.
 - Describe how you have avoided duplicated code and why it is important.
+  - Duplicate code is avoided using interface for different type of customer segment and using a Customer class to create customers.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+  - I have chosen and implemented Strategy Pattern as the requirement is to generate personalized email templates for each customer based on their segment type.  
 
 
 # Maven Commands

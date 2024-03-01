@@ -10,11 +10,12 @@ package edu.bu.met.cs665;
 public class VipSegment implements CustomerSegmentInterface{
     /**
      * Get the email template specific to VIP segment customers.
+     * @param customerName The name of the customer.
      * @return The email template for VIP segment customers.
      */
     @Override
-    public String getEmailTemplate() {
-        return "Hello <customerName>, Thanks for being a important VIP Segment Customer.";
+    public String getEmailTemplate(String customerName) {
+        return "Hello " + customerName + ", Thanks for being a important VIP Segment Customer.";
     }
     /**
      * Get the consumer segment type.

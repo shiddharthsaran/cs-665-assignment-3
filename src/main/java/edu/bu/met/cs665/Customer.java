@@ -26,10 +26,7 @@ public class Customer {
      * @return The email template with customer-specific details.
      */
     public String getEmailTemplate(){
-        String baseEmailTemplate = customerSegment.getEmailTemplate();
-        baseEmailTemplate = baseEmailTemplate.replace("<customerName>", this.customerName);
-
-        return baseEmailTemplate;
+        return customerSegment.getEmailTemplate(this.customerName);
     }
     /**
      * Change the email template for the customer to that of a new segment.

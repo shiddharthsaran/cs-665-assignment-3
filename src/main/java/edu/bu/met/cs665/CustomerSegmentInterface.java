@@ -10,9 +10,10 @@ package edu.bu.met.cs665;
 public interface CustomerSegmentInterface {
     /**
      * Get the email template associated with the customer segment.
+     * @param customerName The name of the customer.
      * @return The email template specific to the customer segment.
      */
-    public String getEmailTemplate();
+    public String getEmailTemplate(String customerName);
     /**
      * Get the type of consumer segment.
      * @return The type of consumer segment as a String.

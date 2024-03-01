@@ -10,11 +10,12 @@ package edu.bu.met.cs665;
 public class ReturningSegment implements CustomerSegmentInterface{
     /**
      * Get the email template specific to returning segment customers.
+     * @param customerName The name of the customer.
      * @return The email template for returning segment customers.
      */
     @Override
-    public String getEmailTemplate() {
-        return "Hello <customerName>, Thanks for being a important Returning Segment Customer.";
+    public String getEmailTemplate(String customerName) {
+        return "Hello " + customerName + ", Thanks for being a important Returning Segment Customer.";
     }
     /**
      * Get the consumer segment type.

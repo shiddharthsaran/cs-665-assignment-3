@@ -10,11 +10,12 @@ package edu.bu.met.cs665;
 public class FrequentSegment implements CustomerSegmentInterface{
     /**
      * Get the email template specific to frequent segment customers.
+     * @param customerName The name of the customer.
      * @return The email template for frequent segment customers.
      */
     @Override
-    public String getEmailTemplate() {
-        return "Hello <customerName>, Thanks for being a important Frequent Segment Customer.";
+    public String getEmailTemplate(String customerName) {
+        return "Hello " + customerName + ", Thanks for being a important Frequent Segment Customer.";
     }
     /**
      * Get the consumer segment type.

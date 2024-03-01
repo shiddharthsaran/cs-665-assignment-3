@@ -10,11 +10,12 @@ package edu.bu.met.cs665;
 public class NewSegment implements CustomerSegmentInterface{
     /**
      * Get the email template specific to new segment customers.
+     * @param customerName The name of the customer.
      * @return The email template for new segment customers.
      */
     @Override
-    public String getEmailTemplate() {
-        return "Hello <customerName>, Thanks for choosing us and welcome to New Customer Segment.";
+    public String getEmailTemplate(String customerName) {
+        return "Hello " + customerName + ", Thanks for choosing us and welcome to New Customer Segment.";
     }
     /**
      * Get the consumer segment type.
